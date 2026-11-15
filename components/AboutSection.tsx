@@ -38,10 +38,16 @@ export default function AboutSection() {
             className="relative bg-surface-container-lowest p-5 rounded-[24px] border-[3px] border-[#111111] shadow-[6px_6px_0px_#111111] flex flex-col items-center"
             style={{ border: "3px solid rgb(17, 17, 17)", borderRadius: "24px", boxShadow: "rgb(17, 17, 17) 6px 6px 0px" }}
           >
-            <div className="w-28 h-20 bg-surface-container rounded-xl border-[2.5px] border-on-surface overflow-hidden relative shadow-inner">
-              <img src="/PPputih.png" alt="Your Avatar" className="w-full h-full object-cover" />
+            <div className="w-36 h-28 bg-white rounded-2xl border-[3px] border-[#111111] overflow-hidden relative shadow-inner flex items-center justify-center">
+              <img
+                src="/doodleart.jpeg"
+                alt="Doodle Art Avatar"
+                className="w-full h-full object-cover object-center scale-95"
+              />
             </div>
-            <div className="mt-3 px-3 py-1 bg-primary-container text-on-primary font-headline-sm text-xs rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_#111111]">
+            <div className="w-12 h-3 bg-on-surface mx-auto mt-2 rounded-sm"></div>
+            <div className="w-20 h-2 bg-on-surface mx-auto mt-0.5 rounded-full"></div>
+            <div className="mt-4 px-3.5 py-1.5 bg-primary-container text-on-primary font-headline-sm text-xs rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_#111111]">
               HI THERE! 👋
             </div>
           </div>
@@ -91,8 +97,12 @@ export default function AboutSection() {
               className="relative bg-surface-container-lowest p-6 rounded-[2rem] border-[3px] border-on-surface shadow-[6px_6px_0px_#111111] hover:-rotate-2 transition-transform"
               style={{ border: "3px solid rgb(17, 17, 17)", borderRadius: "24px", boxShadow: "rgb(17, 17, 17) 6px 6px 0px" }}
             >
-              <div className="w-36 h-28 bg-surface-container rounded-xl border-[2.5px] border-on-surface overflow-hidden relative shadow-inner">
-                <img src="/PPputih.png" alt="Your Avatar" className="w-full h-full object-cover" />
+              <div className="w-36 h-28 bg-white rounded-2xl border-[3px] border-[#111111] overflow-hidden relative shadow-inner flex items-center justify-center">
+                <img
+                  src="/doodleart.jpeg"
+                  alt="Doodle Art Avatar"
+                  className="w-full h-full object-cover object-center scale-95"
+                />
               </div>
               <div className="w-12 h-3 bg-on-surface mx-auto mt-2 rounded-sm"></div>
               <div className="w-20 h-2 bg-on-surface mx-auto mt-0.5 rounded-full"></div>

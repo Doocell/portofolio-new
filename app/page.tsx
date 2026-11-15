@@ -4,7 +4,7 @@ import WaveDivider from "@/components/WaveDivider";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import WorkSection from "@/components/WorkSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+// import TestimonialsSection from "@/components/TestimonialsSection";
 import ProcessSection from "@/components/ProcessSection";
 import CTASection from "@/components/CTASection";
 import { DarkFooterSection, FooterBar } from "@/components/Footer";
@@ -36,14 +36,11 @@ export default function Home() {
         {/* 4. Selected Work */}
         <WorkSection />
 
-        {/* Wave: White → Royal Blue */}
-        <WaveDivider fromColor="bg-surface-container-lowest" toColor="text-primary-container" pathVariant={3} />
+        {/* Wave: White (Selected Work) → Surface (Process) */}
+        <WaveDivider fromColor="bg-surface-container-lowest" toColor="text-surface" pathVariant={3} />
 
-        {/* 5. Testimonials (Kind Words) */}
-        <TestimonialsSection />
-
-        {/* Wave: Royal Blue → Surface */}
-        <WaveDivider fromColor="bg-primary-container" toColor="text-surface" pathVariant={4} />
+        {/* 5. Testimonials (Disembunyikan sementara) */}
+        {/* <TestimonialsSection /> */}
 
         {/* 6. Process */}
         <ProcessSection />
