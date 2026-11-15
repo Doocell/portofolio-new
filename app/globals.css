@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply bg-surface text-on-surface font-body-md text-body-md antialiased;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-3.5 font-headline-sm text-body-lg rounded-full border-[3px] border-on-surface shadow-brutal transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-brutal-lg active:translate-x-1 active:translate-y-1 active:shadow-none uppercase tracking-wide;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-container text-on-primary;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-container text-on-secondary;
+  }
+  
+  .btn-light {
+    @apply bg-surface-container-lowest text-on-surface;
+  }
+  
+  /* Cards */
+  .card {
+    @apply bg-surface p-6 rounded-[1.5rem] border-[3px] border-on-surface shadow-brutal-lg transition-transform hover:-translate-y-1;
+  }
+  
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 font-headline-sm text-label-md uppercase tracking-wider rounded-full border-[2.5px] border-on-surface shadow-[3px_3px_0px_#111111];
+  }
+  
+  /* Sections */
+  .section {
+    @apply w-full border-b-[3px] border-on-surface relative;
+  }
+}
+
+/* Material Symbols Configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Wavy Divider */
+.wave {
+  @apply w-full overflow-hidden leading-none pointer-events-none select-none -mt-1;
+  height: 3rem;
+}
+
+@media (min-width: 768px) {
+  .wave {
+    height: 4rem;
+  }
+}
+
+/* Neo-Brutalist rotations */
+.rotate-brutal-1 { transform: rotate(-2deg); }
+.rotate-brutal-2 { transform: rotate(2deg); }
+.rotate-brutal-3 { transform: rotate(-6deg); }
+.rotate-brutal-4 { transform: rotate(6deg); }
+.rotate-brutal-5 { transform: rotate(-12deg); }
+.rotate-brutal-6 { transform: rotate(12deg); }
