@@ -80,7 +80,7 @@ export default function WorkSection() {
   //     role: "UI/UX Designer",
   //     description: "Sistem desain komprehensif, arsitektur token warna, tipografi, dan prototipe interaktif.",
   //   },
-  // ];
+  ];
 
   return (
     <section id="work" className="w-full bg-surface-container-lowest py-14 lg:py-20 border-b-[3px] border-on-surface relative">
