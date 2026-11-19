@@ -45,39 +45,42 @@ export default function WorkSection() {
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     },
     {
-      title: "Modern E-Commerce Store",
-      category: "Next.js & TypeScript",
-      badge: "WEB APP",
-      bg: "#FF9EC4",
-      textColor: "#111111",
-      tag: "rotate-2",
-      url: "https://github.com/Doocell",
-      role: "Concept Store",
-      description: "Aplikasi e-commerce modern dengan katalog produk, shopping cart, dan checkout responsif.",
-    },
-    {
-      title: "Interactive Analytics Dashboard",
-      category: "React & Tailwind CSS",
-      badge: "SAAS UI",
-      bg: "#FFD21F",
-      textColor: "#111111",
-      tag: "-rotate-2",
-      url: "https://github.com/Doocell",
-      role: "UI Engineer",
-      description: "Dashboard analitik interaktif dengan visualisasi data, komponen modular, dan performa tinggi.",
-    },
-    {
-      title: "Design System & Prototyping",
-      category: "Figma & UI/UX Case Study",
-      badge: "DESIGN SYSTEM",
-      bg: "#E8402F",
+      title: "PCOSmart",
+      category: "Back-End Development • Health Tech",
+      badge: "LIVE WEB APP",
+      bg: "#6D44B8",
       textColor: "#ffffff",
-      tag: "rotate-3",
-      url: "https://github.com/Doocell",
-      role: "UI/UX Designer",
-      description: "Sistem desain komprehensif, arsitektur token warna, tipografi, dan prototipe interaktif.",
+      tag: "rotate-2",
+      image: "/PCOS-beranda.jpeg",
+      url: "https://pcossmart.vercel.app/",
+      role: "Back-End Developer",
+      description:
+        "Aplikasi web pelacak kesehatan PCOS dengan check-in harian, asisten AI, dan edukasi bersumber.",
+      tags: ["Back-End", "AI Assistant", "Health Tracker", "Vercel"],
     },
-  ];
+  //   {
+  //     title: "Interactive Analytics Dashboard",
+  //     category: "React & Tailwind CSS",
+  //     badge: "SAAS UI",
+  //     bg: "#FFD21F",
+  //     textColor: "#111111",
+  //     tag: "-rotate-2",
+  //     url: "https://github.com/Doocell",
+  //     role: "UI Engineer",
+  //     description: "Dashboard analitik interaktif dengan visualisasi data, komponen modular, dan performa tinggi.",
+  //   },
+  //   {
+  //     title: "Design System & Prototyping",
+  //     category: "Figma & UI/UX Case Study",
+  //     badge: "DESIGN SYSTEM",
+  //     bg: "#E8402F",
+  //     textColor: "#ffffff",
+  //     tag: "rotate-3",
+  //     url: "https://github.com/Doocell",
+  //     role: "UI/UX Designer",
+  //     description: "Sistem desain komprehensif, arsitektur token warna, tipografi, dan prototipe interaktif.",
+  //   },
+  // ];
 
   return (
     <section id="work" className="w-full bg-surface-container-lowest py-14 lg:py-20 border-b-[3px] border-on-surface relative">
@@ -205,8 +208,8 @@ export default function WorkSection() {
                   </h3>
                 </div>
 
-                <div className="mt-2 pt-1.5 border-t border-surface-container flex items-center justify-between text-[9px] text-on-surface font-semibold">
-                  <span className="truncate">{project.url ? "Live Site" : (project.role || "Case Study")}</span>
+                <div className="mt-2 pt-1.5 border-t border-surface-container flex items-center justify-between gap-1 text-[9px] text-on-surface font-semibold">
+                  <span className="truncate">{project.role || (project.url ? "Live Site" : "Case Study")}</span>
                   <a
                     href={project.url || "https://github.com/Doocell"}
                     target="_blank"
